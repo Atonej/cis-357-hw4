@@ -20,21 +20,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhX-hh-zEO">
-                                <rect key="frame" x="8" y="218" width="66" height="30"/>
-                                <state key="normal" title="Calculate"/>
-                                <connections>
-                                    <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uik-1T-WZW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8s-AZ-QN1">
-                                <rect key="frame" x="158" y="218" width="58" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Clear"/>
-                                <connections>
-                                    <action selector="clearButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3qN-ch-tnH"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="pD7-Og-quu">
                                 <rect key="frame" x="8" y="28" width="359" height="182"/>
                                 <subviews>
@@ -98,19 +83,33 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5P-h7-1DW">
-                                <rect key="frame" x="160" y="629" width="57" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5P-h7-1DW">
+                                <rect key="frame" x="140.5" y="629" width="94" height="30"/>
                                 <state key="normal" title="Settings"/>
                                 <connections>
                                     <action selector="settingsModeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xr2-fP-7Xk"/>
                                     <segue destination="XRJ-vN-WA7" kind="show" identifier="segueMainView" id="TeT-Kx-fd2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELP-AF-EuL">
-                                <rect key="frame" x="314" y="218" width="53" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELP-AF-EuL">
+                                <rect key="frame" x="273.5" y="218" width="93.5" height="30"/>
                                 <state key="normal" title="Mode"/>
                                 <connections>
                                     <action selector="modeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NVA-8Q-jiO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhX-hh-zEO">
+                                <rect key="frame" x="8" y="218" width="94" height="30"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uik-1T-WZW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8s-AZ-QN1">
+                                <rect key="frame" x="140.5" y="218" width="94" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3qN-ch-tnH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -118,11 +117,23 @@
                         <constraints>
                             <constraint firstItem="pD7-Og-quu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="49a-sA-TeS"/>
                             <constraint firstItem="pD7-Og-quu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="4wU-Wq-XFW"/>
+                            <constraint firstItem="N8s-AZ-QN1" firstAttribute="top" secondItem="pD7-Og-quu" secondAttribute="bottom" constant="8" id="DzY-VB-6Z5"/>
                             <constraint firstItem="uhX-hh-zEO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:4" id="NCM-iY-Jqq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pD7-Og-quu" secondAttribute="trailing" constant="8" id="NE2-Rj-amN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ELP-AF-EuL" secondAttribute="trailing" constant="8" id="Ply-wd-fIs"/>
+                            <constraint firstItem="b5P-h7-1DW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SBp-6r-KBJ"/>
+                            <constraint firstItem="ELP-AF-EuL" firstAttribute="top" secondItem="pD7-Og-quu" secondAttribute="bottom" constant="8" id="SZf-bV-JtP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="b5P-h7-1DW" secondAttribute="bottom" constant="8" id="Z6B-4v-GHw"/>
+                            <constraint firstItem="ELP-AF-EuL" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:4" id="bT0-le-cN6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="b5P-h7-1DW" secondAttribute="bottom" constant="8" id="cZe-vd-Ekf"/>
+                            <constraint firstItem="uhX-hh-zEO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="gZ7-oe-ncT"/>
+                            <constraint firstItem="N8s-AZ-QN1" firstAttribute="top" secondItem="pD7-Og-quu" secondAttribute="bottom" constant="8" id="iWW-dO-ZJ5"/>
+                            <constraint firstItem="b5P-h7-1DW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:4" id="ilm-e7-Icr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="b5P-h7-1DW" secondAttribute="bottom" constant="8" id="j6B-oF-Zoq"/>
+                            <constraint firstItem="uhX-hh-zEO" firstAttribute="top" secondItem="pD7-Og-quu" secondAttribute="bottom" constant="8" id="qDZ-Nz-vlW"/>
+                            <constraint firstItem="N8s-AZ-QN1" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:4" id="uLF-Yi-ZRZ"/>
                             <constraint firstItem="ELP-AF-EuL" firstAttribute="top" secondItem="pD7-Og-quu" secondAttribute="bottom" constant="8" id="uqS-uE-PUV"/>
+                            <constraint firstItem="N8s-AZ-QN1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vWu-Fw-4DC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -193,7 +204,10 @@
                                 </subviews>
                             </stackView>
                             <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsZ-k4-x71">
-                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="m6z-pC-ghQ"/>
+                                </constraints>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

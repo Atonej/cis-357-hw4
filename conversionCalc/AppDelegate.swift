@@ -7,15 +7,19 @@
 //
 
 import UIKit
+let BACKGROUND_COLOR = UIColor.init(red:0.000, green:0.369, blue:0.420, alpha:1.00)
+let FOREGROUND_COLOR = UIColor.init(red:0.937, green:0.820, blue:0.820, alpha:1.0)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+   
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        
         return true
     }
 
